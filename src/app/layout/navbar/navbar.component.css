@@ -1,0 +1,46 @@
+:host {
+    display: block;
+    background-color: #333;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+nav {
+    display: inline-block;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+nav a.active {
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    :host {
+        padding: 10px;
+    }
+
+    nav {
+        display: block;
+    }
+
+    nav a {
+        display: block;
+        width: 100%;
+        text-align: left;
+        padding: 12px 15px;
+    }
+}

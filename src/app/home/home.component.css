@@ -1,0 +1,19 @@
+.home-container {
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #2e3d49;
+    font-size: 2.5em;
+}
+
+section {
+    margin-top: 30px;
+}
+
+.home-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}  
