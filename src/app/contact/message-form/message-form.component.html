@@ -1,0 +1,4 @@
+<form (submit)="sendMessage(); $event.preventDefault()">
+    <textarea [(ngModel)]="message" name="message" placeholder="Ваше повідомлення"></textarea>
+    <button type="submit">Надіслати</button>
+</form>

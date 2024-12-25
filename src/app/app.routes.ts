@@ -4,6 +4,7 @@ import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 import { LayoutComponent } from './layout/layout.component';
 
+
 export const routes: Routes = [
     {path: '', component: LayoutComponent, children: [
         { path: '', component: HomeComponent },    
