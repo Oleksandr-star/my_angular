@@ -1,3 +1,4 @@
+/* Основна контейнерна структура */
 .home-container {
     padding: 20px;
     text-align: center;
@@ -16,4 +17,52 @@ section {
     max-width: 100%;
     height: auto;
     margin-top: 20px;
-}  
+}
+
+/* Стиль для анімації з використанням keyframes */
+@keyframes enlargeAnimation {
+    0% {
+    transform: scale(1);
+    background-color: lightblue;
+    }
+    50% {
+    transform: scale(1.25);
+    background-color: lightcoral;
+    }
+    100% {
+    transform: scale(1.5);
+    background-color: lightgreen;
+    }
+}
+
+/* reusable анімація */
+.box {
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+    background-color: lightblue;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 10px;
+    animation: enlargeAnimation 2s ease-in-out infinite; /* Використання keyframes */
+}
+
+/* Кнопка для перемикання */
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}

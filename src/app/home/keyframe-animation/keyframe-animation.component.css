@@ -1,0 +1,28 @@
+@keyframes changeColorAndSize {
+    0% {
+      transform: scale(1);
+      background-color: lightblue;
+    }
+    50% {
+      transform: scale(1.5);
+      background-color: lightcoral;
+    }
+    100% {
+      transform: scale(1);
+      background-color: lightgreen;
+    }
+  }
+  
+  .animated-box {
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+    background-color: lightblue;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 5px;
+    animation: changeColorAndSize 2s ease-in-out infinite;
+  }  
